@@ -7,14 +7,14 @@
 
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" data-purpose="Layout StyleSheet" title="Web Awesome" href="/css/app-wa-4605c815f1874757bc9ac33aa114fb0f.css?vsn=d">
-    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.1/css/all.css">
-    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.1/css/regular.css">
-    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.1/css/sharp-regular.css">
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.1/css/all.css">
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.1/css/regular.css">
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.1/css/sharp-regular.css">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
   <section class="header">
@@ -28,26 +28,86 @@
   </nav>
   </section>
 
-  <section class="main">
+  <section class="hero">
     <div class="container">
-      <div class="header">
-        <div class="logo">
-          <i class="fa-sharp fa-light fa-cart-shopping"></i>
+      <div class=question>
+        <p><strong> 1. Selecting elements from the DOM tree, show the results of the variables with the selected element(s) and do a little change in the list of Buy Groceries.</strong>
+        </p>
+        <div class="task-button">
+          <a href="#" id="task1a">Selecting elements by the tag name  &ltli&gt and change the first &ltli&gt element to ‘cool’.</a>
         </div>
-        <div class="header-text"><h1>Grocery Shopping</h1></div>
+        <div class="task-button">
+          <a href="#" id="task1b">Selecting elements using CSS selectors for example ‘li.hot’ and change the second &ltli&gt element to ‘complete’.</a>
+        </div>
+        <div class="task-button">
+          <a href="#" id="task1c">Use the querySelectorAll(‘li.hot) and loop through the nodeList and change all the selected items to ‘cool’.</a>
+        </div>
+        <div class="task-button">
+          <a href="#" id="task1d">Traversing the &ltul&gt element and change the firstChild to ‘complete’ and the lastChild to ‘cool’.</a>
+        </div>
+       
+        <div class="linebreak"></div>
+
+        <div class="question">
+          <p><strong>2.	Update elements: removing an element from the DOM tree using manipulation method removeChild():</strong></p>
+          <div class="task-button">
+            <a href="#" id="task2a">Remove the last child from the list</a>
+          </div>
+          <div class="linebreak"></div>
+        </div>
+
+        <div class="question">
+          <p><strong>3.	If you have selected an element node, you can use other properties and methods on that element to access and change its attributes.</strong></p>
+          <div class="task-button">
+            <a href="#" id="task3a">Take the second item from the Groceries list, find out whether it has a class attribute and show this value after the list.</a>
+          </div>
+          <div class="task-button">
+            <a href="#" id="task3b">Change the className of the forth item to ‘cool’ by setAttribute().</a>
+          </div>
+          <div class="task-button">
+            <a href="#" id="task3c">Remove the class of the forth item.</a>
+          </div>
+        </div>
+        <div class="reset-button">
+          <a href="#" id="reset">Reset</a>
+        </div>
       </div>
-      <div class="list-items">
-        <ul>
-          <li id="one" class="hot">Milk <i class="fa-solid fa-fire"></i></li>
-          <li id="two">Eggs</li>
-          <li id="three">Butter</li>
-          <li id="four">Cheese</li>
-          <li id="five">Meat</li>
-        </ul>
+
+      
+
+
+
+      <div class="cart">
+        <div class="header">
+          <div class="logo">
+            <i class="fa-sharp fa-light fa-cart-shopping"></i>
+          </div>
+          <div class="header-text"><h1>Grocery Shopping</h1></div>
+        </div>
+        <div class="list-items">
+          <ul>
+            <li id="one" class="">Milk</li>
+            <li id="two" class="hot">Eggs</li>
+            <li id="three" class="hot">Butter</li>
+            <li id="four" class="hot">Cheese</li>
+            <li id="five" class="">Meat</li>
+            <li id="six" class="">Carrot</li>
+          </ul>
+        </div>
+        <div class="coded">
+          <strong>Classes Color Coded </strong>
+          <div class="hot">Hot</div>
+          <div class="complete">Complete</div>
+          <div class="cool">Cool</div>
+        </div>
+        
       </div>
+
     </div>
-  
   </section>
+
+
+
 
 
   <footer>
@@ -56,10 +116,6 @@
     </section>
   </footer>
 
-  
-  <!-- <script src="script.js"></script> -->
-  <script>
-
-  </script>
+  <script src="/script.js"></script>
 </body>
 </html>
