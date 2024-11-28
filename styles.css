@@ -1,0 +1,103 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  background-color: #eaeaea;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+  height: 80px;
+}
+nav .nav-left{
+  color: var(--text-color);
+  font-size: 25px;
+  font-weight: 400;
+}
+nav .nav-right a {
+  color: var(--text-color);
+  padding: 5px 15px;
+  margin-right: 10px
+}
+nav .nav-right .active {
+  background-color: var(--text-color);
+  color: var(--background-color);
+  border-radius: 5px;
+}
+nav .nav-right .active:hover {
+  background: var(--background-color);
+  color: var(--text-color);
+}
+nav .nav-right a:hover {
+  border: 2px dotted var(--text-color);
+  border-radius: 5px;
+}
+
+
+.main{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.container{
+  width: 500px;
+  border: 1px dashed black;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  padding: 20px;
+  place-content: center;
+}
+
+.header{
+  text-align: center;
+  gap: -200px;
+}
+
+.logo{
+  font-size: 4rem;
+}
+
+ul {
+  list-style:none;
+  padding: 0;
+}
+
+li {
+  padding: 10px 10px;
+  margin: 5px 0;
+  border: 1px solid #a4a4a4;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+
+/* Specific styles for classes */
+.hot {
+  background-color: #fb8719;
+  color: #000000;
+  border: 1px dashed;
+}
+
+.cool {
+  background-color: #acfc16;
+  color: #000000;
+}
+
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  border-top: 1px dashed #000000;
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-align: center;
+}
